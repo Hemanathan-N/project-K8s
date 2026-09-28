@@ -2,7 +2,6 @@ pipeline {
     agent any
     environment {
         IMAGE_NAME = "hemanathan18/employee-app"
-        KUBE_CONFIG = "/var/lib/jenkins/.kube/config"
     }
     stages {
 
