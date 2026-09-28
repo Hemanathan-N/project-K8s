@@ -44,14 +44,14 @@ pipeline {
             emailext(
                 subject: "Jenkins Build Successful !",
                 body: "Jenkins K8s-Deploy-App-pipeline completed successfully.",
-                to: "hemeenufradus18180@gmail.com" 
+                to: "hemanathan18180@gmail.com" 
             ) 
         }
         failure {
             emailext(
                 subject: "Jenkins Build Failed !!",
                 body: "Jenkins K8s-Deploy-App-pipeline failed. Please check logs.",
-                to: "hemeenufradus18180@gmail.com"
+                to: "hemanathan18180@gmail.com"
             )
         }
     }
