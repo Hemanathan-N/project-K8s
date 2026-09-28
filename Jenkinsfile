@@ -33,8 +33,11 @@ pipeline {
             steps {
                     sh '''
                     kubectl get nodes
-                    kubectl apply -f deployment.yml
-                    kubectl apply -f service.yml
+                    kubectl apply -f k8s/deployment.yml
+                    kubectl apply -f k8s/service.yml
+                    kubectl get deployments
+                    kubectl get pods
+                    kubectl get svc
                     ''' 
             }
         }
